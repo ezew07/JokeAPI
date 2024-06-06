@@ -14,6 +14,13 @@
 		F01B634F2C0F4178005B2E38 /* JokeAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B634E2C0F4178005B2E38 /* JokeAPITests.swift */; };
 		F01B63592C0F4178005B2E38 /* JokeAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B63582C0F4178005B2E38 /* JokeAPIUITests.swift */; };
 		F01B635B2C0F4178005B2E38 /* JokeAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B635A2C0F4178005B2E38 /* JokeAPIUITestsLaunchTests.swift */; };
+		F01B636C2C0F4220005B2E38 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B636B2C0F4220005B2E38 /* Joke.swift */; };
+		F01B636E2C0F4375005B2E38 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B636D2C0F4375005B2E38 /* Flags.swift */; };
+		F01B63702C0F43F4005B2E38 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B636F2C0F43F4005B2E38 /* APIManager.swift */; };
+		F01B63722C0F4462005B2E38 /* JokeErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B63712C0F4462005B2E38 /* JokeErrors.swift */; };
+		F01B63742C0F4F24005B2E38 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B63732C0F4F24005B2E38 /* Settings.swift */; };
+		F01B63762C0F508E005B2E38 /* SettingEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01B63752C0F508E005B2E38 /* SettingEnums.swift */; };
+		F04064B42C0F5B6500DC95BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04064B32C0F5B6500DC95BA /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		F01B63542C0F4178005B2E38 /* JokeAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JokeAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01B63582C0F4178005B2E38 /* JokeAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAPIUITests.swift; sourceTree = "<group>"; };
 		F01B635A2C0F4178005B2E38 /* JokeAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F01B636B2C0F4220005B2E38 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		F01B636D2C0F4375005B2E38 /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		F01B636F2C0F43F4005B2E38 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F01B63712C0F4462005B2E38 /* JokeErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeErrors.swift; sourceTree = "<group>"; };
+		F01B63732C0F4F24005B2E38 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F01B63752C0F508E005B2E38 /* SettingEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingEnums.swift; sourceTree = "<group>"; };
+		F04064B32C0F5B6500DC95BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +108,10 @@
 		F01B633C2C0F4176005B2E38 /* JokeAPI */ = {
 			isa = PBXGroup;
 			children = (
+				F01B636A2C0F420C005B2E38 /* Views */,
+				F01B63692C0F4205005B2E38 /* ViewModels */,
+				F01B63682C0F41F4005B2E38 /* Models */,
 				F01B633D2C0F4176005B2E38 /* JokeAPIApp.swift */,
-				F01B633F2C0F4176005B2E38 /* ContentView.swift */,
 				F01B63412C0F4178005B2E38 /* Assets.xcassets */,
 				F01B63432C0F4178005B2E38 /* Preview Content */,
 			);
@@ -125,6 +141,35 @@
 				F01B635A2C0F4178005B2E38 /* JokeAPIUITestsLaunchTests.swift */,
 			);
 			path = JokeAPIUITests;
+			sourceTree = "<group>";
+		};
+		F01B63682C0F41F4005B2E38 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F01B636B2C0F4220005B2E38 /* Joke.swift */,
+				F01B636D2C0F4375005B2E38 /* Flags.swift */,
+				F01B63712C0F4462005B2E38 /* JokeErrors.swift */,
+				F01B63752C0F508E005B2E38 /* SettingEnums.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F01B63692C0F4205005B2E38 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F01B636F2C0F43F4005B2E38 /* APIManager.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F01B636A2C0F420C005B2E38 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F01B633F2C0F4176005B2E38 /* ContentView.swift */,
+				F01B63732C0F4F24005B2E38 /* Settings.swift */,
+				F04064B32C0F5B6500DC95BA /* HomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F04064B42C0F5B6500DC95BA /* HomeView.swift in Sources */,
 				F01B63402C0F4176005B2E38 /* ContentView.swift in Sources */,
 				F01B633E2C0F4176005B2E38 /* JokeAPIApp.swift in Sources */,
+				F01B63702C0F43F4005B2E38 /* APIManager.swift in Sources */,
+				F01B63762C0F508E005B2E38 /* SettingEnums.swift in Sources */,
+				F01B636C2C0F4220005B2E38 /* Joke.swift in Sources */,
+				F01B63742C0F4F24005B2E38 /* Settings.swift in Sources */,
+				F01B636E2C0F4375005B2E38 /* Flags.swift in Sources */,
+				F01B63722C0F4462005B2E38 /* JokeErrors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
